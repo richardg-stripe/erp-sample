@@ -6,7 +6,9 @@ interceptHttpAsCurl();
 (async () => {
   const setupIntentId = process.env.STRIPE_SETUP_INTENT_ID;
 
-  // Check setup intent was completed by customer!
+  // Check setup intent was completed by customer! A webhook could be a better way of doing this:
+  // Webhooks: setup_intent.succeeded or setup_intent.setup_failed
+
   const setupIntent = await secretKeyStripe.setupIntents.retrieve(
     setupIntentId
   );

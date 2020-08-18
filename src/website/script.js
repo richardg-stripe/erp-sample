@@ -1,5 +1,6 @@
 const REDIRECT_URL = `${window.location.origin}/completed.html`;
-const PUBLIC_KEY = "pk_test_Ed0nWnalclCxbyoEz4KI0BWU00KtCmUjRz";
+const PUBLIC_KEY =
+  "pk_test_51HHQHWKUloXd1vNV24Foml7WueHfzYLADVa80RCcmKnOZ2d57R1JK7CyCkDHb3Ey8r52HN0T159BEQ1MkvmOQjxx00SZM1zGn3";
 const stripe = window.Stripe(PUBLIC_KEY);
 
 const elements = stripe.elements();

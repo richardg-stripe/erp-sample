@@ -5,17 +5,17 @@
     <script src="https://js.stripe.com/v3/"></script>
     <script src="/script.js" defer></script>
   </head>
-
   <body>
     <div>
       <h3>Card</h3>
       <div>4000005780000007 successful card</div>
       <div>4000000000000002 failed card</div>
       <div>4000000000003220 3DS card</div>
-      <div id="card-element"></div>
+      <div
+        style="margin-top: 30px; margin-bottom: 30px;"
+        id="card-element"
+      ></div>
       <button id="pay-card-button">Pay With Card</button>
-      <h3>Card Stripe Checkout</h3>
-      <button id="pay-stripe-checkout">Pay With Card</button>
       <p style="color: red;" id="error"></p>
     </div>
   </body>
