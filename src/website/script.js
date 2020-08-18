@@ -19,7 +19,7 @@ const handlePaymentIntentResponse = async (response) => {
     window.location.href = response.next_action.redirect_to_url.url;
   } else if (response.next_action.type === "use_stripe_sdk") {
     // See https://stripe.com/docs/payments/payment-intents/migration-synchronous
-    const confirmResponse = await stripe.confirmCardPayment(
+    const confirmResponse = await stripe.confirmCardSetup(
       response.client_secret
     );
     if (confirmResponse.error) {
